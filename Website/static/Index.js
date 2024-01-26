@@ -52,7 +52,7 @@ document.querySelectorAll(".file-input-method").forEach(inputElement => {
   // Convert files button
   convert.addEventListener("click", e => {
     window.location.replace(redirect_page);
-  });  jeff
+  }); 
   
 
 });
