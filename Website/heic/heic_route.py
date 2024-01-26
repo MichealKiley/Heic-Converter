@@ -7,12 +7,14 @@ import os
 import uuid
 import shutil
 from flask import send_file
+from files.path import temp_file_path
 
 register_heif_opener()
+temp_path = temp_file_path()
 
 # setting blueprint and assigning the file path for the temp files
 heic_route = Blueprint("heic_route", __name__)
-file_storage_path = "C:/Users/mkiley/OneDrive - neuco.com/Documents/VS code/Heic flask - Test/files/"
+file_storage_path = str(temp_path) + "/"
 
 
 # assigns each user a unique session id and redirects them to the main page
