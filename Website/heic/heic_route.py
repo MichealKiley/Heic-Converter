@@ -8,6 +8,7 @@ import uuid
 import shutil
 from flask import send_file
 from files.path import temp_file_path
+# im next to stupid
 
 register_heif_opener()
 temp_path = temp_file_path()
