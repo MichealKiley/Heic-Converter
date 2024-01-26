@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download File</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="container">
+        <form action={{download_unique_id}} method="POST" class="container">
+            <div class="download_button">
+                <input type="submit" value="download" name="convert" id="download" hidden>
+                <span>Download</span>
+            </div>
+            <div class="convert_button">
+                <input type="submit" value="convert" name="convert" id="convert" hidden>
+                <span>Convert More</span>
+            </div>
+        </form>
+    </div>
+<script type="text/javascript" src="../static/Download.js"></script>
+</body>
+</html>

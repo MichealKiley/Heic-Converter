@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heic and Heif Converter</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="container">
+        <form action={{unique_id}} method="POST" enctype="multipart/form-data" class="drop-area">
+            <input type="file" name="file" id="input-file" onchange="this.form.submit()" accept=".heic,.heif" class="file-input-method" multiple hidden>
+                <div id="img-view">
+                    <img src="../static/cloud-icon.png" alt="upload image">
+                    <p>Drag and drop or click here<br>to upload image!</p>
+                    <span>Upload heic and heif files from desktop</span>
+                </div>   
+        </form>
+        <div class="flash_message">
+            <span id="files_dropped_flash">{{flash}}</span>
+        </div>
+        <div class="convert_files_button">
+            <input type="button" id="convert_files" hidden>
+            <p>Convert files</p>
+        </div>
+    </div>
+<script type="text/javascript">
+    var session_id = '{{ unique_id }}'
+    var redirect_page = '{{redirect_unique_id}}';
+</script>
+<script type="text/javascript" src="../static/Index.js"></script>
+</body>
+</html>

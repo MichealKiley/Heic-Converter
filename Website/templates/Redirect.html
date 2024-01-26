@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <div class="container"></div>
+        <script type="text/javascript">   
+            var download_page = '{{download_unique_id}}';
+            setTimeout(() => {
+                window.location.replace(download_page);
+            }, 1000);
+        </script>
+    </div>
+</body>
+</html>
